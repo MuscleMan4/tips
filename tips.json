@@ -1,5 +1,13 @@
 [
   {
+      "title": "Everyday Git in twenty commands or so",
+      "tip": "git help everyday"
+  },
+  {
+      "title": "Show helpful guides that come with Git",
+      "tip": "git help -g"
+  },
+  {
       "title": "Overwrite pull",
       "tip": "git fetch --all && git reset --hard origin/master"
   },
@@ -241,7 +249,7 @@
     "tip": "git bundle create <file> <branch-name>"
   },
   {
-    "title": "Import form a bundle",
+    "title": "Import from a bundle",
     "tip": "git clone repo.bundle <repo-dir> -b <branch-name>"
   },
   {
@@ -251,5 +259,18 @@
   {
     "title": "Ignore one file on commit (e.g. Changelog).",
     "tip": "git update-index --assume-unchanged Changelog; git commit -a; git update-index --no-assume-unchanged Changelog"
+  },
+  {
+    "title": "Stash changes before rebasing",
+    "tip": "git rebase --autostash"
+  },
+  {
+    "title": "Fetch pull request by ID to a local branch",
+    "tip": "git fetch origin pull/<id>/head:<branch-name>",
+    "alternatives": ["git pull origin pull/<id>/head:<branch-name>"]
+  },
+  {
+    "title": "Show the most recent tag on the current branch",
+    "tip": "git describe --tags --abbrev=0"
   }
 ]
